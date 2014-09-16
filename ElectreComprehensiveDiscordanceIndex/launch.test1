@@ -1,0 +1,1 @@
+python ElectreComprehensiveDiscordanceIndex.py -i tests/in1_alternatives -o tests/out1
