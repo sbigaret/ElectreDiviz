@@ -1,3 +1,22 @@
+"""
+ElectreCrispOutrankingAggregation - Computes outranking relation as an aggregation of concordance and discordance binary relations 
+Usage:
+    ElectreCrispOutrankingAggregation.py -i DIR -o DIR
+
+Options:
+    -i DIR     Specify input directory. It should contain the following files:
+                   alternatives.xml
+                   profiles.xml (OPTIONAL see:method_parameters.xml)
+                   concordance.xml
+                   discordance.xml
+                   method_parameters.xml
+    -o DIR     Specify output directory. Files generated as output:
+                   outranking.xml
+                   messages.xml
+    --version  Show version.
+    -h --help  Show this screen.
+"""
+
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os
@@ -16,7 +35,6 @@ __version__ = '0.1.0'
 
 def main():
     try:
-    
         args = docopt(__doc__, version=__version__)
         output_dir = None
         input_dir, output_dir = get_dirs(args)

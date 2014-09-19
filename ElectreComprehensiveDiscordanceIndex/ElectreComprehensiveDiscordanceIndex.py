@@ -1,14 +1,16 @@
 """
-ElectreComprehensiveDiscordanceIndex - 
+ElectreComprehensiveDiscordanceIndex - Computes comprehensive discordance index from given discordance relation
 Usage:
     ElectreComprehensiveDiscordanceIndex.py -i DIR -o DIR
 
 Options:
     -i DIR     Specify input directory. It should contain the following files:
                    alternatives.xml
+                   profiles.xml (OPTIONAL see:method_parameters.xml)
                    criteria.xml
                    weights.xml
                    discordance.xml
+                   method_parameters.xml
     -o DIR     Specify output directory. Files generated as output:
                    discordance.xml
                    messages.xml

@@ -1,3 +1,23 @@
+"""
+ElectreNFSOutranking - This module computes NFS from given outranking(+non-outranking). Rankings can be a binary relation or real-value comparisons
+Usage:
+    ElectreNFSOutranking.py -i DIR -o DIR
+
+Options:
+    -i DIR     Specify input directory. It should contain the following files:
+                   alternatives.xml
+                   outranking.xml
+                   nonoutranking.xml (OPTIONAL see:method_parameters.xml)
+                   method_parameters.xml
+    -o DIR     Specify output directory. Files generated as output:
+                   nfs.xml
+                   strength.xml
+                   weakness.xml
+                   messages.xml
+    --version  Show version.
+    -h --help  Show this screen.
+"""
+
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os
