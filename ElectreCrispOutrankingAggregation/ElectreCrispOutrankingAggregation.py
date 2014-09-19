@@ -1,20 +1,3 @@
-"""
-ElectreCrispOutrankingRelation - 
-Usage:
-    ElectreCrispOutrankingRelation.py -i DIR -o DIR
-
-Options:
-    -i DIR     Specify input directory. It should contain the following files:
-                   alternatives.xml
-                   concordance.xml
-                   discordance.xml
-    -o DIR     Specify output directory. Files generated as output:
-                   outranking.xml
-                   message.xml
-    --version  Show version.
-    -h --help  Show this screen.
-"""
-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os

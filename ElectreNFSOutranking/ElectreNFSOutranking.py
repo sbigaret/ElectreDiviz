@@ -1,22 +1,3 @@
-"""
-ElectreComprehensiveDiscordanceIndex - 
-Usage:
-    ElectreComprehensiveDiscordanceIndex.py -i DIR -o DIR
-
-Options:
-    -i DIR     Specify input directory. It should contain the following files:
-                   alternatives.xml
-                   outranking.xml
-                   nonoutranking.xml
-    -o DIR     Specify output directory. Files generated as output:
-                   nfs.xml
-                   strength.xml
-                   weakness.xml
-                   messages.xml
-    --version  Show version.
-    -h --help  Show this screen.
-"""
-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os
@@ -58,8 +39,6 @@ def main():
         outranking = d.outranking
         nonoutranking = d.nonoutranking
         crisp_outranking = d.crisp_outranking
-        
-        print (outranking)
         
         alg = algorithm(alternativesId, outranking, nonoutranking, crisp_outranking)
         result = alg.Run()

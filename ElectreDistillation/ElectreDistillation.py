@@ -1,20 +1,3 @@
-"""
-ElectreDistillation - performs distillation
-Usage:
-    ElectreDistillation.py -i DIR -o DIR
-
-Options:
-    -i DIR     Specify input directory. It should contain the following files:
-                   alternatives.xml
-                   credibility.xml
-                   parameters.xml
-    -o DIR     Specify output directory. Files generated as output:
-                   distillation.xml
-                   message.xml
-    --version  Show version.
-    -h --help  Show this screen.
-"""
-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os

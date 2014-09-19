@@ -216,7 +216,7 @@ def _get_outranking(xmltree, mcda_concept=None):
         return ret
 
 
-def _get_alternatives_comparisons(xmltree, alternatives,
+def _get_alternatives_comparisons(xmltree, alternatives, profiles = None,
                                  categories_profiles=None, use_partials=False,
                                  mcda_concept=None) :
     """Parameter 'use_partials' designates whether the input contains 'partial'
@@ -275,8 +275,9 @@ def _get_alternatives_comparisons(xmltree, alternatives,
                 for value_node in value_nodes:
                     value_node_id = value_node.get("id")
                     values[value_node_id] = _get_value(value_node)
-            if initial in alternatives or initial in categories_profiles:
-                if terminal in alternatives or terminal in categories_profiles:
+                    
+            if initial in alternatives or initial in profiles or initial in categories_profiles :
+                if terminal in alternatives or terminal in profiles or terminal in categories_profiles :
                     if initial not in ret:
                         ret[initial] = Vividict()
                     ret[initial][terminal] = values if use_partials else value
@@ -394,6 +395,9 @@ def get_input_data(input_dir, filenames, params, **kwargs):
     for p in params:
         if p == 'alternatives':
             d.alternatives = px.getAlternativesID(trees['alternatives'])
+                
+        elif p == 'profiles':
+            d.profiles = px.getProfilesID(trees['profiles'])
 
         elif p == 'categories_profiles':
             comparison_with = kwargs.get('comparison_with')
@@ -410,17 +414,34 @@ def get_input_data(input_dir, filenames, params, **kwargs):
             d.comparison_with = px.getParameterByName(trees['method_parameters'], 'comparison_with')
 
         elif p == 'concordance':
-            comparison_with = None
+        
             alternatives = px.getAlternativesID(trees['alternatives'])
+            
+            comparison_with = kwargs.get('comparison_with')
+            
             if (trees.has_key('methos_parameters')):
                 comparison_with = px.getParameterByName(trees['method_parameters'], 'comparison_with')
+            
+            if kwargs.get('use_partials') is not None:
+                use_partials = kwargs.get('use_partials')    
+            else:
+                if (trees.has_key('methos_parameters')):
+                    parameter = px.getParameterByName(trees['method_parameters'], 'use_partials')
+                    use_partials = True if parameter == 'true' else False
+            
+            categories_profiles = None
+            profiles = None
+            
             if comparison_with in ('boundary_profiles', 'central_profiles'):
                 categories_profiles = _get_categories_profiles(trees['categories_profiles'],
                                                                comparison_with)
-                d.concordance = _get_alternatives_comparisons(trees['concordance'], alternatives,
-                                                              categories_profiles)
-            else:
-                d.concordance = px.getAlternativesComparisons(trees['concordance'], alternatives)
+            if comparison_with == 'profiles':
+                profiles = px.getProfilesID(trees['profiles'])                                                                      
+   
+                
+            d.concordance = _get_alternatives_comparisons(trees['concordance'], alternatives, profiles = profiles,
+                                                          categories_profiles=categories_profiles,
+                                                          use_partials=use_partials)
 
         elif p == 'credibility':
             alternatives = px.getAlternativesID(trees['alternatives'])
@@ -473,8 +494,7 @@ def get_input_data(input_dir, filenames, params, **kwargs):
             
             alternatives = px.getAlternativesID(trees['alternatives'])
             
-            comparison_with = None
-            use_partials = None
+            comparison_with = kwargs.get('comparison_with')
             
             if (trees.has_key('methos_parameters')):
                 comparison_with = px.getParameterByName(trees['method_parameters'], 'comparison_with')
@@ -486,13 +506,17 @@ def get_input_data(input_dir, filenames, params, **kwargs):
                     parameter = px.getParameterByName(trees['method_parameters'], 'use_partials')
                     use_partials = True if parameter == 'true' else False
             
+            categories_profiles = None
+            profiles = None
+            
             if comparison_with in ('boundary_profiles', 'central_profiles'):
                 categories_profiles = _get_categories_profiles(trees['categories_profiles'],
                                                                comparison_with)
-            else:
-                categories_profiles = None
+            if comparison_with == 'profiles':
+                profiles = px.getProfilesID(trees['profiles'])                                                                      
+   
                 
-            d.discordance = _get_alternatives_comparisons(trees['discordance'], alternatives,
+            d.discordance = _get_alternatives_comparisons(trees['discordance'], alternatives, profiles = profiles,
                                                           categories_profiles=categories_profiles,
                                                           use_partials=use_partials)
         elif p == 'downwards':
@@ -522,13 +546,14 @@ def get_input_data(input_dir, filenames, params, **kwargs):
                 outranking = _get_outranking(trees['outranking'])
             d.outranking = outranking
         elif p == 'nonoutranking':
-            alternatives = px.getAlternativesID(trees['alternatives'])
-            nonoutranking = _get_intersection_distillation(trees['nonoutranking'], alternatives)
-            if nonoutranking == None:
-                nonoutranking = px.getAlternativesComparisons(trees['nonoutranking'], alternatives)
-            if nonoutranking == {}:
-                nonoutranking = _get_outranking(trees['nonoutranking'])
-            d.nonoutranking = nonoutranking
+            if trees.has_key("nonoutranking"):
+                alternatives = px.getAlternativesID(trees['alternatives'])
+                nonoutranking = _get_intersection_distillation(trees['nonoutranking'], alternatives)
+                if nonoutranking == None:
+                    nonoutranking = px.getAlternativesComparisons(trees['nonoutranking'], alternatives)
+                if nonoutranking == {}:
+                    nonoutranking = _get_outranking(trees['nonoutranking'])
+                d.nonoutranking = nonoutranking
         elif p == 'performances':
             d.performances = px.getPerformanceTable(trees['performance_table'], None, None)
 
@@ -591,6 +616,9 @@ def get_input_data(input_dir, filenames, params, **kwargs):
         elif p == 'beta':
             d.beta = px.getParameterByName(trees['method_parameters'], 'beta')
         
+        elif p == 'crisp_outranking':
+            d.crisp_outranking = px.getParameterByName(trees['method_parameters'], 'crisp_outranking')
+        
         elif p == 'direction':
             d.direction = px.getParameterByName(trees['method_parameters'], 'direction')
         
@@ -618,8 +646,12 @@ def get_input_data(input_dir, filenames, params, **kwargs):
 # The order of nodes in xml file will be derived from its content.
 # All the sorting should be done here (i.e. before serialization), I think.
 def comparisons_to_xmcda(comparisons, comparables, use_partials=False,
-                         mcda_concept=None):
+                         mcda_concept=None, with_profile=False):
 
+    trm = 'aternativeID'
+    #if with_profile == True:   
+    #    trm = 'categoryID'
+        
     # XXX maybe it's better to get/set those types globally?
     # (i.e. for the whole file)
     def _get_value_type(value):
@@ -646,22 +678,28 @@ def comparisons_to_xmcda(comparisons, comparables, use_partials=False,
         for a in comparables[0]:
             for b in comparables[1]:
                 ordering.append((a, b))
-        for b in comparables[1]:
-            for a in comparables[0]:
-                ordering.append((b, a))
+        if with_profile == False:
+            for b in comparables[1]:
+                for a in comparables[0]:
+                    ordering.append((b, a))
     if not mcda_concept:
         xmcda = etree.Element('alternativesComparisons')
     else:
         xmcda = etree.Element('alternativesComparisons',
                               mcdaConcept=mcda_concept)
     pairs = etree.SubElement(xmcda, 'pairs')
+    
     for alt1, alt2 in ordering:
+    
+        if not comparisons.has_key(alt1): continue
+        if not comparisons[alt1].has_key(alt2): continue
+                
         pair = etree.SubElement(pairs, 'pair')
         initial = etree.SubElement(pair, 'initial')
         alt_id = etree.SubElement(initial, 'alternativeID')
         alt_id.text = alt1
         terminal = etree.SubElement(pair, 'terminal')
-        alt_id = etree.SubElement(terminal, 'alternativeID')
+        alt_id = etree.SubElement(terminal, trm)
         alt_id.text = alt2
         if not use_partials:
             value_type = _get_value_type(comparisons[alt1][alt2])

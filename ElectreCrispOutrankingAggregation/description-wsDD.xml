@@ -1,86 +1,76 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../docs/w3-ws/specificationData/description.xsd">
-  <program provider="PUT" name="AlternativesRankingViaDistillation" displayName="AlternativesRankingViaDistillation" version="0.1.0" />
+  <program provider="PUT" name="ElectreCrispOutrankingAggregation" displayName="ElectreCrispOutrankingAggregation" version="0.1.0" />
 
     <documentation>
-        <description>SOME DESCRIPTION</description>
-        <url>SOME URL<url>
+        <description>Computes outranking relation as an aggregation of concordance and discordance binary relations </description>
+        <url>https://github.com/MTomczyk/ElectreDiviz<url>
     </documentation>
    
     <parameters>
         <input id="input1" name="alternatives" displayName="Alternatives" isoptional="0">
             <documentation>
-                <description>Alternatives to consider.</description>
+                <description>Alternatives to consider</description>
             </documentation>
             <xmcda tag="alternatives" />
         </input>
-        <input id="input2" name="outrankingRelation" displayName="Outranking Relation" isoptional="0">
+        <input id="input2" name="concordance" displayName="Concordance" isoptional="0">
             <documentation>
-                <description>Outranking relation</description>
+                <description>Concordance binary relation</description>
             </documentation>
-            <xmcda tag="outrankingRelation" />
+            <xmcda tag="concordance" />
         </input>
-        <input id="input3" name="parameters" displayName="Parameters" isoptional="0">
+        <input id="input3" name="discordance" displayName="Discordance" isoptional="0">
             <documentation>
-                <description>A set of parameters provided to tune up the module's operation.</description>
+                <description>Discordance binary relation (comparing with alternatives or profiles)</description>
             </documentation>
-            <xmcda tag="parameters">
+            <xmcda tag="discordance" />
+        </input>
+        <input id="input4" name="profiles" displayName="Profiles" isoptional="1">
+            <documentation>
+                <description>Profiles to consider</description>
+            </documentation>
+            <xmcda tag="profiles" />
+        </input>
+        <input id="input5" name="method_parameters" displayName="Method Parameters" isoptional="0">
+            <documentation>
+                <description>A set of parameters provided to tune up the module's operation</description>
+            </documentation>
+            <xmcda tag="method_parameters">
             <![CDATA[
                 <methodParameters>
-                    <parameter name="direction">
+                    <parameter name="comparison_with">
                     <value>
                         <label>%1</label>
                     </value>
-                </parameter>
-                <parameter name="alpha">
-                    <value>
-                        <real>%2</real>
-                    </value>
-                </parameter>
-                <parameter name="beta">
-                <value>
-                    <real>%3</real>
-                </value>
                 </parameter>
                 </methodParameters>
             ]]>
             </xmcda>
             <gui status="preferGUI">
-                <entry id="%1" type="enum" displayName="comparison_with">
+                <entry id="%1" type="enum" displayName="Comparison With">
                 <documentation>
-                    <description>DESCRIPTION</description>
+                    <description>Alternatives or Profiles</description>
                 </documentation>
                 <items>
                     <item id="item0">
-                        <description>Downwards distillation</description>
-                        <value>downwards</value>
+                        <description>Comparison with alternatives</description>
+                        <value>alternatives</value>
                     </item>
                     <item id="item1">
-                        <description>Upwards distillation</description>
-                        <value>upwards</value>
+                        <description>Comparison with profiles</description>
+                        <value>profiles</value>
                     </item>
                 </items>
                 <defaultValue>item0</defaultValue>
                 </entry>
-                <entry id="%2" type="real" displayName="alpha">
-                    <documentation>
-                         <description>DESCRIPTION</description>
-                    </documentation>
-                    <defaultValue>-0.15</defaultValue>
-                </entry>
-                <entry id="%3" type="real" displayName="beta">
-                    <documentation>
-                        <description>DESC<description>
-                    </documentation>
-                    <defaultValue>0.3</defaultValue>
-                </entry>
             </gui>
         </input>
         
-        <output id="output1" name="result" displayName="result">
+        <output id="output1" name="outranking" displayName="Outranking">
         <documentation>
-            <description>Result of distillation</description>
+            <description>Computed outranking relation</description>
         </documentation>
         <xmcda tag="result" />
         </output>
@@ -89,7 +79,7 @@
         <documentation>
             <description>Messages or errors generated by this module.</description>
         </documentation>
-        <xmcda tag="methodMessages" />
+        <xmcda tag="messages" />
         </output>
 
         

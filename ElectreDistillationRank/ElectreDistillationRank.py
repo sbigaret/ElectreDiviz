@@ -1,22 +1,3 @@
-"""
-ElectreDistillationRank - 
-Usage:
-    ElectreDistillationRank.py -i DIR -o DIR
-
-Options:
-    -i DIR     Specify input directory. It should contain the following files:
-                   alternatives.xml
-                   downwards.xml
-                   upwards.xml
-    -o DIR     Specify output directory. Files generated as output:
-                   intersection.xml
-                   rank.xml
-                   median.xml
-                   messages.xml
-    --version  Show version.
-    -h --help  Show this screen.
-"""
-
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import os
