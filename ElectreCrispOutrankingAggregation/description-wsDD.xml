@@ -5,7 +5,7 @@
 
     <documentation>
         <description>Computes outranking relation as an aggregation of concordance and discordance binary relations </description>
-        <url>https://github.com/MTomczyk/ElectreDiviz<url>
+        <url>https://github.com/MTomczyk/ElectreDiviz</url>
     </documentation>
    
     <parameters>

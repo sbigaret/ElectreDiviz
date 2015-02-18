@@ -5,7 +5,7 @@
 
     <documentation>
         <description>This module performs distillation (upwards/downwards)</description>
-        <url>https://github.com/MTomczyk/ElectreDiviz<url>
+        <url>https://github.com/MTomczyk/ElectreDiviz</url>
     </documentation>
    
     <parameters>
@@ -71,7 +71,7 @@
                 </entry>
                 <entry id="%3" type="real" displayName="Beta">
                     <documentation>
-                        <description>Used in credibility bounds calculations (alpha x cred. + beta)<description>
+                        <description>Used in credibility bounds calculations (alpha x cred. + beta)</description>
                     </documentation>
                     <defaultValue>0.3</defaultValue>
                 </entry>

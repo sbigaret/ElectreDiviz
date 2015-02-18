@@ -4,8 +4,8 @@
   <program provider="PUT" name="ElectreNFSOutranking" displayName="ElectreNFSOutranking" version="0.1.0" />
 
     <documentation>
-        <description>This module computes NFS from given outranking(+non-outranking). Rankings can be a binary relation or real-value comparisons /description>
-        <url>https://github.com/MTomczyk/ElectreDiviz<url>
+        <description>This module computes NFS from given outranking(+non-outranking). Rankings can be a binary relation or real-value comparisons</description>
+        <url>https://github.com/MTomczyk/ElectreDiviz</url>
     </documentation>
    
     <parameters>
@@ -55,7 +55,7 @@
         
         <output id="output1" name="nfs" displayName="NFS">
         <documentation>
-            <description>NFS result for each alternative<description>
+            <description>NFS result for each alternative</description>
         </documentation>
         <xmcda tag="nfs" />
         </output>
