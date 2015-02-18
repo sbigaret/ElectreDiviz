@@ -63,13 +63,13 @@
                 </items>
                 <defaultValue>item0</defaultValue>
                 </entry>
-                <entry id="%2" type="real" displayName="Alpha">
+                <entry id="%2" type="float" displayName="Alpha">
                     <documentation>
                          <description>Used in credibility bounds calculations (alpha x cred. + beta)</description>
                     </documentation>
                     <defaultValue>-0.15</defaultValue>
                 </entry>
-                <entry id="%3" type="real" displayName="Beta">
+                <entry id="%3" type="float" displayName="Beta">
                     <documentation>
                         <description>Used in credibility bounds calculations (alpha x cred. + beta)</description>
                     </documentation>
