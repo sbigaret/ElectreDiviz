@@ -38,37 +38,38 @@ class algorithm(object):
                         s[a1][a2] = 1                   
                         break
         
-        # Find Bests and Next
-        best = []
-        next = {}
-        for a1 in self.alternatives:
-            dc = 0
-            a3 = -1
-            for a2 in self.alternatives:
-                if a1 == a2: 
-                    continue    
-                if (s[a2][a1] == 1) and (s[a1][a2] == 0):
-                    dc = 1
-                if (s[a1][a2] == 1) and (s[a2][a1] == 0):
-                    if (a3 == -1) or ((s[a2][a3] == 1) and (s[a3][a2] == 0)):
-                        a3 = a2                                    
-            next[a1] = a3
-            if dc == 0:
-                best.append(a1)
-        
-        # Final rank        
-        r = {}
-        for a1 in self.alternatives:
-            b = self.N
-            for root in best:
-                c = root
-                l = 0
-                while (c != a1) and (next[c] != -1):
-                    c = next[c]
-                    l += 1
-                if l < b:
-                    b = l
-            r[a1] = b
+   
+	# Construct Rank
+	r = {} 
+	used = []
+	for i in range(self.N):
+		used.append(0)
+
+	left = self.N
+	front = 0
+	while (left > 0):
+		toRemove = []
+		for i in range(self.N):
+			if used[i] == 1: 
+				continue
+			passed = True
+			for j in range(self.N):
+				if i == j: 
+					continue
+				if used[j] == 1: 
+					continue
+				if s[self.alternatives[j]][self.alternatives[i]] == 1:
+					passed = False
+					break
+			if passed == True:
+				toRemove.append(i)
+		for i in toRemove:
+			r[self.alternatives[i]] = front
+			used[i] = 1
+			left -= 1
+		front += 1
+
+	
         
         #Median ranking
         mo = []

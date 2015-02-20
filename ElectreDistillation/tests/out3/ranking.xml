@@ -4,33 +4,51 @@
   xsi:schemaLocation='http://www.decision-deck.org/2012/XMCDA-2.2.0 http://www.decision-deck.org/xmcda/_downloads/XMCDA-2.2.0.xsd'>
 <alternativesValues>
   <alternativeValue>
-    <alternativeID>AUT</alternativeID>
-    <value>
-      <integer>3</integer>
-    </value>
-  </alternativeValue>
-  <alternativeValue>
-    <alternativeID>BEL</alternativeID>
+    <alternativeID>a1</alternativeID>
     <value>
       <integer>2</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
-    <alternativeID>FRA</alternativeID>
+    <alternativeID>a2</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>4</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
-    <alternativeID>GER</alternativeID>
+    <alternativeID>a3</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>5</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
-    <alternativeID>ITA</alternativeID>
+    <alternativeID>a4</alternativeID>
     <value>
       <integer>1</integer>
+    </value>
+  </alternativeValue>
+  <alternativeValue>
+    <alternativeID>a5</alternativeID>
+    <value>
+      <integer>5</integer>
+    </value>
+  </alternativeValue>
+  <alternativeValue>
+    <alternativeID>a6</alternativeID>
+    <value>
+      <integer>3</integer>
+    </value>
+  </alternativeValue>
+  <alternativeValue>
+    <alternativeID>a7</alternativeID>
+    <value>
+      <integer>1</integer>
+    </value>
+  </alternativeValue>
+  <alternativeValue>
+    <alternativeID>a8</alternativeID>
+    <value>
+      <integer>5</integer>
     </value>
   </alternativeValue>
 </alternativesValues>
