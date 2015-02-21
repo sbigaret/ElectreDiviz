@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../docs/w3-ws/specificationData/description.xsd">
-  <program provider="PUT" name="ElectreCrispOutrankingAggregation" displayName="ElectreCrispOutrankingAggregation" version="0.1.0" />
+  <program provider="PUT" name="ElectreCrispOutrankingAggregation" displayName="ElectreCrispOutrankingAggregation" version="0.2.0" />
 
     <documentation>
-        <description>Computes outranking relation as an aggregation of concordance and discordance binary relations </description>
+        <description>Computes outranking relation as an aggregation of concordance and discordance binary relations. The relation is true (1) for a pair of alternatives when there is a concordance (1) for A > B and no discordance againts A > B (0).</description>
         <url>https://github.com/MTomczyk/ElectreDiviz</url>
     </documentation>
    
@@ -15,19 +15,19 @@
             </documentation>
             <xmcda tag="alternatives" />
         </input>
-        <input id="input2" name="concordance" displayName="concordance" isoptional="0">
+        <input id="input2" name="concordance" displayName="concordance_binary" isoptional="0">
             <documentation>
                 <description>Concordance binary relation</description>
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
-        <input id="input3" name="discordance" displayName="discordance" isoptional="0">
+        <input id="input3" name="discordance" displayName="discordance_binary" isoptional="0">
             <documentation>
                 <description>Discordance binary relation (comparing with alternatives or profiles)</description>
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
-        <input id="input4" name="profiles" displayName="profiles" isoptional="1">
+        <input id="input4" name="profiles" displayName="classes_profiles" isoptional="1">
             <documentation>
                 <description>Profiles to consider</description>
             </documentation>
@@ -49,17 +49,21 @@
             ]]>
             </xmcda>
             <gui status="preferGUI">
-                <entry id="%1" type="enum" displayName="Comparison With">
+                <entry id="%1" type="enum" displayName="comparison_with">
                 <documentation>
                     <description>Alternatives or Profiles</description>
                 </documentation>
                 <items>
                     <item id="item0">
-                        <description>Comparison with alternatives</description>
+                        <description>alternatives vs alternatives</description>
                         <value>alternatives</value>
                     </item>
                     <item id="item1">
-                        <description>Comparison with profiles</description>
+                        <description>alternatives vs boundary profiles</description>
+                        <value>profiles</value>
+                    </item>
+		    <item id="item2">
+                        <description>alternatives vs central (characteristic) profiles</description>
                         <value>profiles</value>
                     </item>
                 </items>
