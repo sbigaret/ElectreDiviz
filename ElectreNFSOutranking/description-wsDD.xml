@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../docs/w3-ws/specificationData/description.xsd">
-  <program provider="PUT" name="ElectreNFSOutranking" displayName="ElectreNFSOutranking" version="0.1.0" />
+  <program provider="PUT" name="ElectreNFSOutranking" displayName="ElectreNFSOutranking" version="0.2.0" />
 
     <documentation>
-        <description>This module computes NFS from given outranking(+non-outranking). Rankings can be a binary relation or real-value comparisons</description>
+        <description>This module computes NFS from given outranking(+non_outranking). Rankings can be a binary relation or real-value comparisons</description>
         <url>https://github.com/MTomczyk/ElectreDiviz</url>
     </documentation>
    
@@ -21,14 +21,14 @@
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
-        <input id="input3" name="nonoutranking" displayName="non-outranking" isoptional="1">
+        <input id="input3" name="nonoutranking" displayName="non_outranking" isoptional="1">
             <documentation>
                 <description>Non-Outranking: binary realtion (f.e. CRISP result) or real-value comparisons</description>
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
         
-        <input id="input4" name="method_parameters" displayName="method parameters" isoptional="0">
+        <input id="input4" name="method_parameters" displayName="method_parameters" isoptional="0">
             <documentation>
                 <description>A set of parameters provided to tune up the module's operation</description>
             </documentation>
@@ -44,7 +44,7 @@
             ]]>
             </xmcda>
             <gui status="preferGUI">
-                <entry id="%1" type="boolean" displayName="Crisp Outranking">
+                <entry id="%1" type="boolean" displayName="crisp_outranking">
                     <documentation>
                          <description>True: inputs are CRISP outranking (binary relation); False: inputs are real-value comparisons</description>
                     </documentation>
@@ -53,7 +53,7 @@
             </gui>
         </input>
         
-        <output id="output1" name="nfs" displayName="NFS">
+        <output id="output1" name="nfs" displayName="net_flow_score">
         <documentation>
             <description>NFS result for each alternative</description>
         </documentation>
