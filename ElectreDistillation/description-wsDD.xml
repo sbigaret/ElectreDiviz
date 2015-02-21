@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../docs/w3-ws/specificationData/description.xsd">
-  <program provider="PUT" name="ElectreDistillation" displayName="ElectreDistillation" version="0.1.0" />
+  <program provider="PUT" name="ElectreDistillation" displayName="ElectreDistillation" version="0.2.0" />
 
     <documentation>
         <description>This module performs distillation (upwards/downwards)</description>
@@ -15,13 +15,13 @@
             </documentation>
             <xmcda tag="alternatives" />
         </input>
-        <input id="input2" name="credibility" displayName="credibility relation" isoptional="0">
+        <input id="input2" name="credibility" displayName="credibility" isoptional="0">
             <documentation>
                 <description>Credibility relation</description>
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
-        <input id="input3" name="method_parameters" displayName="method parameters" isoptional="0">
+        <input id="input3" name="method_parameters" displayName="method_parameters" isoptional="0">
             <documentation>
                 <description>A set of parameters provided to tune up the module's operation</description>
             </documentation>
@@ -47,7 +47,7 @@
             ]]>
             </xmcda>
             <gui status="preferGUI">
-                <entry id="%1" type="enum" displayName="Direction">
+                <entry id="%1" type="enum" displayName="direction">
                 <documentation>
                     <description>Parameters of method</description>
                 </documentation>
@@ -63,13 +63,13 @@
                 </items>
                 <defaultValue>item0</defaultValue>
                 </entry>
-                <entry id="%2" type="float" displayName="Alpha">
+                <entry id="%2" type="float" displayName="alpha">
                     <documentation>
                          <description>Used in credibility bounds calculations (alpha x cred. + beta)</description>
                     </documentation>
                     <defaultValue>-0.15</defaultValue>
                 </entry>
-                <entry id="%3" type="float" displayName="Beta">
+                <entry id="%3" type="float" displayName="beta">
                     <documentation>
                         <description>Used in credibility bounds calculations (alpha x cred. + beta)</description>
                     </documentation>
