@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <program_description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../docs/w3-ws/specificationData/description.xsd">
-  <program provider="PUT" name="ElectreComprehensiveDiscordanceIndex" displayName="ElectreComprehensiveDiscordanceIndex" version="0.1.0" />
+  <program provider="PUT" name="ElectreComprehensiveDiscordanceIndex" displayName="ElectreComprehensiveDiscordanceIndex" version="0.2.0" />
 
     <documentation>
         <description>Computes comprehensive discordance index from given discordance relation</description>
@@ -21,7 +21,7 @@
             </documentation>
             <xmcda tag="criteria" />
         </input>
-        <input id="input3" name="discordance" displayName="discordance" isoptional="0">
+        <input id="input3" name="discordance" displayName="discordance_partials" isoptional="0">
             <documentation>
                 <description>Discordance real-value relation (for each criterion; comparing with alternatives or profiles)</description>
             </documentation>
@@ -33,13 +33,13 @@
             </documentation>
             <xmcda tag="criteriaValues" />
         </input>
-        <input id="input5" name="profiles" displayName="profiles" isoptional="1">
+        <input id="input5" name="profiles" displayName="classes_profiles" isoptional="1">
             <documentation>
                 <description>Profiles to consider</description>
             </documentation>
             <xmcda tag="criteria" />
         </input>
-        <input id="input6" name="method_parameters" displayName="method parameters" isoptional="0">
+        <input id="input6" name="method_parameters" displayName="method_parameters" isoptional="0">
             <documentation>
                 <description>A set of parameters provided to tune up the module's operation</description>
             </documentation>
@@ -55,17 +55,21 @@
             ]]>
             </xmcda>
             <gui status="preferGUI">
-                <entry id="%1" type="enum" displayName="Comparison With">
+                <entry id="%1" type="enum" displayName="comparison_with">
                 <documentation>
                     <description>Alternatives or Profiles</description>
                 </documentation>
                 <items>
                     <item id="item0">
-                        <description>Comparison with alternatives</description>
+                        <description>alternatives vs alternatives</description>
                         <value>alternatives</value>
                     </item>
                     <item id="item1">
-                        <description>Comparison with profiles</description>
+                        <description>alternatives vs boundary profiles</description>
+                        <value>profiles</value>
+                    </item>
+		    <item id="item2">
+                        <description>alternatives vs central (characteristic) profiles</description>
                         <value>profiles</value>
                     </item>
                 </items>
