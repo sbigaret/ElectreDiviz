@@ -4,7 +4,7 @@
   <program provider="PUT" name="ElectreDistillationRank" displayName="ElectreDistillationRank" version="0.1.0" />
 
     <documentation>
-        <description>This module provides three types of resultes performed on downwards and upwards distillation</description>
+        <description>This module provides three types of resultes performed on downwards and upwards distillation: intersection (outranking relation), final rank (distance to the best solution), median rank.</description>
         <url>https://github.com/MTomczyk/ElectreDiviz</url>
     </documentation>
    
@@ -15,13 +15,13 @@
             </documentation>
             <xmcda tag="alternatives" />
         </input>
-        <input id="input2" name="downwards" displayName="downwards distillation" isoptional="0">
+        <input id="input2" name="downwards" displayName="downwards_distillation" isoptional="0">
             <documentation>
                 <description>Product of downwards distillation</description>
             </documentation>
             <xmcda tag="alternativesValues" />
         </input>
-        <input id="input3" name="upwards" displayName="upwards distillation" isoptional="0">
+        <input id="input3" name="upwards" displayName="upwards_distillation" isoptional="0">
             <documentation>
                 <description>Product of upwards distillation</description>
             </documentation>
