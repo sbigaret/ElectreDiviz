@@ -56,7 +56,7 @@
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -67,7 +67,7 @@
         <aternativeID>ITA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -111,7 +111,7 @@
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -166,7 +166,7 @@
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -177,7 +177,7 @@
         <aternativeID>ITA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -188,7 +188,7 @@
         <aternativeID>BEL</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -221,7 +221,7 @@
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -243,7 +243,7 @@
         <aternativeID>BEL</aternativeID>
       </terminal>
       <value>
-        <integer>1</integer>
+        <integer>0</integer>
       </value>
     </pair>
     <pair>
@@ -265,7 +265,7 @@
         <aternativeID>AUT</aternativeID>
       </terminal>
       <value>
-        <integer>1</integer>
+        <integer>0</integer>
       </value>
     </pair>
     <pair>

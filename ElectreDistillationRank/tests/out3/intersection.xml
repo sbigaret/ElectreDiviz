@@ -34,17 +34,6 @@
         <aternativeID>GER</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>ITA</alternativeID>
-      </initial>
-      <terminal>
-        <aternativeID>AUT</aternativeID>
-      </terminal>
-      <value>
         <integer>1</integer>
       </value>
     </pair>
@@ -53,10 +42,21 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
+        <aternativeID>AUT</aternativeID>
+      </terminal>
+      <value>
+        <integer>1</integer>
+      </value>
+    </pair>
+    <pair>
+      <initial>
+        <alternativeID>ITA</alternativeID>
+      </initial>
+      <terminal>
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -67,7 +67,7 @@
         <aternativeID>ITA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -89,7 +89,7 @@
         <aternativeID>GER</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -111,7 +111,7 @@
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -166,7 +166,7 @@
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -177,7 +177,7 @@
         <aternativeID>ITA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -188,7 +188,7 @@
         <aternativeID>BEL</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -199,7 +199,7 @@
         <aternativeID>GER</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -221,7 +221,7 @@
         <aternativeID>FRA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -232,7 +232,7 @@
         <aternativeID>ITA</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>
@@ -254,7 +254,7 @@
         <aternativeID>GER</aternativeID>
       </terminal>
       <value>
-        <integer>0</integer>
+        <integer>1</integer>
       </value>
     </pair>
     <pair>

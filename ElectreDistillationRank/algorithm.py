@@ -40,6 +40,7 @@ class algorithm(object):
         
    
 	# Construct Rank
+
 	r = {} 
 	used = []
 	for i in range(self.N):
@@ -58,18 +59,16 @@ class algorithm(object):
 					continue
 				if used[j] == 1: 
 					continue
-				if s[self.alternatives[j]][self.alternatives[i]] == 1:
+				if s[self.alternatives[j]][self.alternatives[i]] == 1 and s[self.alternatives[i]][self.alternatives[j]] == 0:
 					passed = False
 					break
 			if passed == True:
-				toRemove.append(i)
+				toRemove.append(i)			
 		for i in toRemove:
 			r[self.alternatives[i]] = front
 			used[i] = 1
 			left -= 1
 		front += 1
-
-	
         
         #Median ranking
         mo = []
