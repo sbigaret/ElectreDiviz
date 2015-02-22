@@ -4,7 +4,7 @@
   <program provider="PUT" name="ElectreNFSOutranking" displayName="ElectreNFSOutranking" version="0.2.0" />
 
     <documentation>
-        <description>This module computes NFS from given outranking(+non_outranking). Rankings can be a binary relation or real-value comparisons</description>
+        <description>This module computes Net Flow Score from given outranking (additionally with non_outranking). Rankings can be a binary relation or real-value comparisons</description>
         <url>https://github.com/MTomczyk/ElectreDiviz</url>
     </documentation>
    
