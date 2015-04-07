@@ -9,7 +9,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -20,7 +20,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -31,7 +31,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -42,7 +42,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>AUT</aternativeID>
+        <alternativeID>AUT</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -53,7 +53,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>FRA</aternativeID>
+        <alternativeID>FRA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -64,7 +64,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -75,7 +75,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -86,7 +86,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -97,7 +97,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>AUT</aternativeID>
+        <alternativeID>AUT</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -108,7 +108,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>FRA</aternativeID>
+        <alternativeID>FRA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -119,7 +119,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -130,7 +130,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -141,7 +141,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -152,7 +152,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>AUT</aternativeID>
+        <alternativeID>AUT</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -163,7 +163,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>FRA</aternativeID>
+        <alternativeID>FRA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -174,7 +174,7 @@
         <alternativeID>AUT</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -185,7 +185,7 @@
         <alternativeID>AUT</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -196,7 +196,7 @@
         <alternativeID>AUT</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -207,7 +207,7 @@
         <alternativeID>AUT</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>AUT</aternativeID>
+        <alternativeID>AUT</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -218,7 +218,7 @@
         <alternativeID>AUT</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>FRA</aternativeID>
+        <alternativeID>FRA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -229,7 +229,7 @@
         <alternativeID>FRA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -240,7 +240,7 @@
         <alternativeID>FRA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -251,7 +251,7 @@
         <alternativeID>FRA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -262,7 +262,7 @@
         <alternativeID>FRA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>AUT</aternativeID>
+        <alternativeID>AUT</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -273,7 +273,7 @@
         <alternativeID>FRA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>FRA</aternativeID>
+        <alternativeID>FRA</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>

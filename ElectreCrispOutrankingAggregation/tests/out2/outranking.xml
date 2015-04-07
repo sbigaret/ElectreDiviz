@@ -9,7 +9,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>A</aternativeID>
+        <alternativeID>A</alternativeID>
       </terminal>
       <value>
         <integer>0</integer>
@@ -20,7 +20,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>B</aternativeID>
+        <alternativeID>B</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -31,7 +31,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>C</aternativeID>
+        <alternativeID>C</alternativeID>
       </terminal>
       <value>
         <integer>1</integer>
@@ -42,7 +42,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>D</aternativeID>
+        <alternativeID>D</alternativeID>
       </terminal>
       <value>
         <integer>0</integer>

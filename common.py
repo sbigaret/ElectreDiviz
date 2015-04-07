@@ -648,7 +648,7 @@ def get_input_data(input_dir, filenames, params, **kwargs):
 def comparisons_to_xmcda(comparisons, comparables, use_partials=False,
                          mcda_concept=None, with_profile=False):
 
-    trm = 'aternativeID'
+    trm = 'alternativeID'
     #if with_profile == True:   
     #    trm = 'categoryID'
         

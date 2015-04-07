@@ -9,7 +9,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <real>0.0</real>
@@ -20,7 +20,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <real>0.5</real>
@@ -31,7 +31,7 @@
         <alternativeID>ITA</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <real>0.785714285714</real>
@@ -42,7 +42,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <real>0.385714285714</real>
@@ -53,7 +53,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <real>0.0</real>
@@ -64,7 +64,7 @@
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <real>0.457142857143</real>
@@ -75,7 +75,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>ITA</aternativeID>
+        <alternativeID>ITA</alternativeID>
       </terminal>
       <value>
         <real>1.0</real>
@@ -86,7 +86,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>BEL</aternativeID>
+        <alternativeID>BEL</alternativeID>
       </terminal>
       <value>
         <real>0.457142857143</real>
@@ -97,7 +97,7 @@
         <alternativeID>GER</alternativeID>
       </initial>
       <terminal>
-        <aternativeID>GER</aternativeID>
+        <alternativeID>GER</alternativeID>
       </terminal>
       <value>
         <real>0.0</real>
