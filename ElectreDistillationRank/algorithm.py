@@ -65,7 +65,7 @@ class algorithm(object):
 			if passed == True:
 				toRemove.append(i)			
 		for i in toRemove:
-			r[self.alternatives[i]] = front
+			r[self.alternatives[i]] = front + 1
 			used[i] = 1
 			left -= 1
 		front += 1

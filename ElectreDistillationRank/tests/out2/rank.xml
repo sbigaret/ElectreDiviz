@@ -6,49 +6,49 @@
   <alternativeValue>
     <alternativeID>a1</alternativeID>
     <value>
-      <integer>1</integer>
+      <integer>2</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>a2</alternativeID>
     <value>
-      <integer>3</integer>
+      <integer>4</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>a3</alternativeID>
     <value>
-      <integer>2</integer>
+      <integer>3</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>a4</alternativeID>
     <value>
-      <integer>1</integer>
+      <integer>2</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>a5</alternativeID>
     <value>
-      <integer>5</integer>
+      <integer>6</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>a6</alternativeID>
     <value>
-      <integer>2</integer>
+      <integer>3</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>a7</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>1</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>a8</alternativeID>
     <value>
-      <integer>4</integer>
+      <integer>5</integer>
     </value>
   </alternativeValue>
 </alternativesValues>

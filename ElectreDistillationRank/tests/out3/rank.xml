@@ -6,31 +6,31 @@
   <alternativeValue>
     <alternativeID>AUT</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>1</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>BEL</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>1</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>FRA</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>1</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>GER</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>1</integer>
     </value>
   </alternativeValue>
   <alternativeValue>
     <alternativeID>ITA</alternativeID>
     <value>
-      <integer>0</integer>
+      <integer>1</integer>
     </value>
   </alternativeValue>
 </alternativesValues>
