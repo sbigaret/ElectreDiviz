@@ -1,6 +1,9 @@
 import copy, math
 
+
 from copy import deepcopy
+
+from common import Vividict
 
 class algorithm(object):
     
@@ -102,8 +105,14 @@ class algorithm(object):
                         p += 1 
             m[self.alternatives[mo[i]]] = p   
                
-                        
-        result = (s, r, m)
+	##########################################
+	intersection = Vividict()
+	for a in self.alternatives:
+		for b in self.alternatives:
+			if s[a][b] == 1:
+				intersection[a][b] = True;                       
+
+        result = (intersection, r, m)
         return result
      
         

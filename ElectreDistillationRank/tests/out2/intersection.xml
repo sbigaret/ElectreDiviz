@@ -11,9 +11,6 @@
       <terminal>
         <alternativeID>a1</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -22,9 +19,6 @@
       <terminal>
         <alternativeID>a2</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -33,20 +27,6 @@
       <terminal>
         <alternativeID>a3</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a1</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a4</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -55,9 +35,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -66,20 +43,6 @@
       <terminal>
         <alternativeID>a6</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a1</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a7</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -88,20 +51,6 @@
       <terminal>
         <alternativeID>a8</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a2</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a1</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -110,31 +59,6 @@
       <terminal>
         <alternativeID>a2</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a2</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a3</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a2</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a4</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -143,31 +67,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a2</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a6</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a2</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a7</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -176,31 +75,6 @@
       <terminal>
         <alternativeID>a8</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a3</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a1</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a3</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a2</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -209,20 +83,6 @@
       <terminal>
         <alternativeID>a3</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a3</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a4</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -231,31 +91,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a3</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a6</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a3</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a7</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -264,20 +99,6 @@
       <terminal>
         <alternativeID>a8</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a4</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a1</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -286,20 +107,6 @@
       <terminal>
         <alternativeID>a2</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a4</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a3</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -308,9 +115,6 @@
       <terminal>
         <alternativeID>a4</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -319,31 +123,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a4</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a6</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a4</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a7</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -352,53 +131,6 @@
       <terminal>
         <alternativeID>a8</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a5</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a1</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a5</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a2</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a5</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a3</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a5</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a4</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -407,53 +139,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a5</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a6</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a5</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a7</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a5</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a8</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a6</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a1</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -462,31 +147,6 @@
       <terminal>
         <alternativeID>a2</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a6</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a3</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a6</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a4</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -495,9 +155,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -506,20 +163,6 @@
       <terminal>
         <alternativeID>a6</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a6</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a7</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -528,9 +171,6 @@
       <terminal>
         <alternativeID>a8</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -539,9 +179,6 @@
       <terminal>
         <alternativeID>a1</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -550,9 +187,6 @@
       <terminal>
         <alternativeID>a2</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -561,9 +195,6 @@
       <terminal>
         <alternativeID>a3</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -572,9 +203,6 @@
       <terminal>
         <alternativeID>a4</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -583,9 +211,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -594,9 +219,6 @@
       <terminal>
         <alternativeID>a6</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -605,9 +227,6 @@
       <terminal>
         <alternativeID>a7</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -616,53 +235,6 @@
       <terminal>
         <alternativeID>a8</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a8</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a1</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a8</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a2</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a8</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a3</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a8</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a4</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -671,31 +243,6 @@
       <terminal>
         <alternativeID>a5</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a8</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a6</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>a8</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>a7</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -704,9 +251,6 @@
       <terminal>
         <alternativeID>a8</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
     </pair>
   </pairs>
 </alternativesComparisons>

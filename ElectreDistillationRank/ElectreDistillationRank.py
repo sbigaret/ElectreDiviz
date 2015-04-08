@@ -29,7 +29,7 @@ from algorithm import *
 
 from docopt import docopt
 
-from common import comparisons_to_xmcda, ranks_to_xmcda, create_messages_file, get_dirs, \
+from common import comparisons_to_xmcda, outranking_to_xmcda, ranks_to_xmcda, create_messages_file, get_dirs, \
     get_error_message, get_input_data, get_linear, omega, write_xmcda, Vividict
 
 __version__ = '0.1.0'
@@ -61,7 +61,8 @@ def main():
         result = alg.Run()
         
         comparables = (alternativesId, alternativesId)
-        xmcda = comparisons_to_xmcda(result[0], comparables)
+        #xmcda = comparisons_to_xmcda(result[0], comparables)
+        xmcda = outranking_to_xmcda(result[0])
         write_xmcda(xmcda, os.path.join(output_dir, 'intersection.xml'))
         xmcda = ranks_to_xmcda(result[1], 'integer', None)
         write_xmcda(xmcda, os.path.join(output_dir, 'rank.xml'))
