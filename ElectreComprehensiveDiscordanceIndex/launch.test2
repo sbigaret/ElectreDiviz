@@ -1,1 +1,1 @@
-python ElectreComprehensiveDiscordanceIndex.py -i tests/in2_profiles -o tests/out2
+python ElectreComprehensiveDiscordanceIndex.py -i tests/in2 -o tests/out2
