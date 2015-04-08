@@ -6,47 +6,11 @@
   <pairs>
     <pair>
       <initial>
-        <alternativeID>ITA</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>ITA</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>ITA</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>BEL</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
         <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
         <alternativeID>ITA</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>BEL</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>BEL</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
   </pairs>
 </alternativesComparisons>

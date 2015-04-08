@@ -28,7 +28,7 @@ from algorithm import *
 
 from docopt import docopt
 
-from common import comparisons_to_xmcda, create_messages_file, get_dirs, \
+from common import comparisons_to_xmcda,  outranking_to_xmcda, create_messages_file, get_dirs, \
     get_error_message, get_input_data, get_linear, omega, write_xmcda, Vividict
 
 __version__ = '0.1.0'
@@ -61,8 +61,8 @@ def main():
             params = [
                 'alternatives',
                 'profiles',
-                'concordance',
-                'discordance',
+                'crisp_concordance',
+                'crisp_discordance',
             ]
             kwargs = {'use_partials': False, 'comparison_with': comparison_with}        
             d = get_input_data(input_dir, filenames, params, **kwargs)
@@ -79,8 +79,8 @@ def main():
             ]
             params = [
                 'alternatives',
-                'concordance',
-                'discordance',
+                'crisp_concordance',
+                'crisp_discordance',
             ] 
             kwargs = {'use_partials': False}              
             d = get_input_data(input_dir, filenames, params, **kwargs)
@@ -94,12 +94,12 @@ def main():
         
         if profilesId == None:
             comparables = (alternativesId, alternativesId)
-            xmcda = comparisons_to_xmcda(result, comparables)
+            xmcda =  outranking_to_xmcda(result)
             write_xmcda(xmcda, os.path.join(output_dir, 'outranking.xml'))
             create_messages_file(None, ('Everything OK.',), output_dir)
         else:
             comparables = (alternativesId, profilesId)
-            xmcda = comparisons_to_xmcda(result, comparables, None, with_profile = True)
+            xmcda =  outranking_to_xmcda(result)
             write_xmcda(xmcda, os.path.join(output_dir, 'outranking.xml'))
             create_messages_file(None, ('Everything OK.',), output_dir)
  

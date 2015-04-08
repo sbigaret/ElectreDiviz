@@ -1,6 +1,7 @@
 import copy, math
 
 from copy import deepcopy
+from common import Vividict
 
 class algorithm(object):
     
@@ -12,10 +13,11 @@ class algorithm(object):
         self.discordance = discordance
     
     def Run(self): 
-      
-        result = {}
+
+        result = Vividict()
+
         for a1 in self.alternatives:
-            result[a1] = {}
+            #result[a1] = {}
             
             alt = self.alternatives
             if not self.profiles == None: 
@@ -24,13 +26,8 @@ class algorithm(object):
             for a2 in alt:
                 if not self.concordance.has_key(a1): continue
                 if not self.concordance[a1].has_key(a2): continue
-                if not self.discordance.has_key(a1): continue
-                if not self.discordance[a1].has_key(a2): continue
-                
-                result[a1][a2] = 0  
-            
-                if (self.concordance[a1][a2] == 1) and (self.discordance[a1][a2] == 0):
-                    result[a1][a2] = 1
+                if self.discordance.has_key(a1) and self.discordance[a1].has_key(a2): continue
+                result[a1][a2] = True
                 
         return result
                 

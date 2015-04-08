@@ -6,14 +6,11 @@
   <pairs>
     <pair>
       <initial>
-        <alternativeID>ITA</alternativeID>
+        <alternativeID>BEL</alternativeID>
       </initial>
       <terminal>
-        <alternativeID>A</alternativeID>
+        <alternativeID>C</alternativeID>
       </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
     <pair>
       <initial>
@@ -22,31 +19,6 @@
       <terminal>
         <alternativeID>B</alternativeID>
       </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>BEL</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>C</alternativeID>
-      </terminal>
-      <value>
-        <integer>1</integer>
-      </value>
-    </pair>
-    <pair>
-      <initial>
-        <alternativeID>BEL</alternativeID>
-      </initial>
-      <terminal>
-        <alternativeID>D</alternativeID>
-      </terminal>
-      <value>
-        <integer>0</integer>
-      </value>
     </pair>
   </pairs>
 </alternativesComparisons>

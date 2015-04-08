@@ -217,7 +217,7 @@ def _get_outranking(xmltree, mcda_concept=None):
 
 
 def _get_alternatives_comparisons(xmltree, alternatives, profiles = None,
-                                 categories_profiles=None, use_partials=False,
+                                 categories_profiles=None, use_partials=False, use_value=True,
                                  mcda_concept=None) :
     """Parameter 'use_partials' designates whether the input contains 'partial'
     (i.e. per-criterion) comparisons.
@@ -256,31 +256,36 @@ def _get_alternatives_comparisons(xmltree, alternatives, profiles = None,
         for pair in comparisons.findall("pairs/pair"):
             initial = pair.find("initial/alternativeID").text
             terminal = pair.find("terminal/alternativeID").text
-            if not use_partials:
-                value_node = pair.find("value")
-                if value_node is None:
-                    f = os.path.split(xmltree.base)[-1]
-                    raise RuntimeError("Corrupted '{}' file or wrong value of "
-                                       "the 'use_partials' parameter."
-                                       .format(f))
-                value = _get_value(value_node)
+            if use_value:	
+                if not use_partials:
+                    value_node = pair.find("value")
+                    if value_node is None:
+                        f = os.path.split(xmltree.base)[-1]
+                        raise RuntimeError("Corrupted '{}' file or wrong value of "
+		                                   "the 'use_partials' parameter."
+		                                   .format(f))
+                    value = _get_value(value_node)
+                else:
+                    value_nodes = pair.find("values")
+                    if value_nodes is None:
+                        f = os.path.split(xmltree.base)[-1]
+                        raise RuntimeError("Corrupted '{}' file or wrong value of "
+		                                   "the 'use_partials' parameter."
+		                                   .format(f))
+                    values = Vividict()
+                    for value_node in value_nodes:
+                        value_node_id = value_node.get("id")
+                        values[value_node_id] = _get_value(value_node)
             else:
-                value_nodes = pair.find("values")
-                if value_nodes is None:
-                    f = os.path.split(xmltree.base)[-1]
-                    raise RuntimeError("Corrupted '{}' file or wrong value of "
-                                       "the 'use_partials' parameter."
-                                       .format(f))
-                values = Vividict()
-                for value_node in value_nodes:
-                    value_node_id = value_node.get("id")
-                    values[value_node_id] = _get_value(value_node)
+                value = 1
                     
             if initial in alternatives or initial in profiles or initial in categories_profiles :
                 if terminal in alternatives or terminal in profiles or terminal in categories_profiles :
                     if initial not in ret:
                         ret[initial] = Vividict()
                     ret[initial][terminal] = values if use_partials else value
+
+
         return ret
 
 
@@ -442,6 +447,35 @@ def get_input_data(input_dir, filenames, params, **kwargs):
             d.concordance = _get_alternatives_comparisons(trees['concordance'], alternatives, profiles = profiles,
                                                           categories_profiles=categories_profiles,
                                                           use_partials=use_partials)
+        elif p == 'crisp_concordance':
+        
+            alternatives = px.getAlternativesID(trees['alternatives'])
+            
+            comparison_with = kwargs.get('comparison_with')
+            
+            if (trees.has_key('methos_parameters')):
+                comparison_with = px.getParameterByName(trees['method_parameters'], 'comparison_with')
+            
+            if kwargs.get('use_partials') is not None:
+                use_partials = kwargs.get('use_partials')    
+            else:
+                if (trees.has_key('methos_parameters')):
+                    parameter = px.getParameterByName(trees['method_parameters'], 'use_partials')
+                    use_partials = True if parameter == 'true' else False
+            
+            categories_profiles = None
+            profiles = None
+            
+            if comparison_with in ('boundary_profiles', 'central_profiles'):
+                categories_profiles = _get_categories_profiles(trees['categories_profiles'],
+                                                               comparison_with)
+            if comparison_with == 'profiles':
+                profiles = px.getProfilesID(trees['profiles'])                                                                      
+   
+                
+            d.concordance = _get_alternatives_comparisons(trees['concordance'], alternatives, profiles = profiles,
+                                                          categories_profiles=categories_profiles,
+                                                          use_partials=use_partials, use_value=False)
 
         elif p == 'credibility':
             alternatives = px.getAlternativesID(trees['alternatives'])
@@ -519,6 +553,38 @@ def get_input_data(input_dir, filenames, params, **kwargs):
             d.discordance = _get_alternatives_comparisons(trees['discordance'], alternatives, profiles = profiles,
                                                           categories_profiles=categories_profiles,
                                                           use_partials=use_partials)
+
+        elif p == 'crisp_discordance':
+            
+            alternatives = px.getAlternativesID(trees['alternatives'])
+            
+            comparison_with = kwargs.get('comparison_with')
+            
+            if (trees.has_key('methos_parameters')):
+                comparison_with = px.getParameterByName(trees['method_parameters'], 'comparison_with')
+            
+            if kwargs.get('use_partials') is not None:
+                use_partials = kwargs.get('use_partials')    
+            else:
+                if (trees.has_key('methos_parameters')):
+                    parameter = px.getParameterByName(trees['method_parameters'], 'use_partials')
+                    use_partials = True if parameter == 'true' else False
+            
+            categories_profiles = None
+            profiles = None
+            
+            if comparison_with in ('boundary_profiles', 'central_profiles'):
+                categories_profiles = _get_categories_profiles(trees['categories_profiles'],
+                                                               comparison_with)
+            if comparison_with == 'profiles':
+                profiles = px.getProfilesID(trees['profiles'])                                                                      
+   
+                
+            d.discordance = _get_alternatives_comparisons(trees['discordance'], alternatives, profiles = profiles,
+                                                          categories_profiles=categories_profiles,
+                                                          use_partials=use_partials, use_value=False)
+
+
         elif p == 'downwards':
             
             alternatives = px.getAlternativesID(trees['alternatives'])        

@@ -9,9 +9,6 @@
 			<terminal>
 				<alternativeID>A</alternativeID>
 			</terminal>
-			<value>
-				<integer>1</integer>
-			</value>
 		</pair>
 		<pair>
 			<initial>
@@ -20,9 +17,6 @@
 			<terminal>
 				<alternativeID>B</alternativeID>
 			</terminal>
-			<value>
-				<integer>1</integer>
-			</value>
 		</pair>
 		<pair>
 			<initial>
@@ -31,9 +25,6 @@
 			<terminal>
 				<alternativeID>C</alternativeID>
 			</terminal>
-			<value>
-				<integer>1</integer>
-			</value>
 		</pair>
 		<pair>
 			<initial>
@@ -42,9 +33,6 @@
 			<terminal>
 				<alternativeID>D</alternativeID>
 			</terminal>
-			<value>
-				<integer>1</integer>
-			</value>
 		</pair>
 	</pairs>
 </alternativesComparisons>
