@@ -26,7 +26,7 @@ class algorithm(object):
         for a1 in self.alternatives:
             for a2 in self.alternatives:
                 if a1 == a2:
-                    s[a1][a2] = 1
+                    s[a1][a2] = 0
                     continue
                 for i in range(2):
                     a = self.isBetter(a1, a2, rank[i])
