@@ -163,3 +163,30 @@ diff -s tests/messages.xml tests/out1/messages.xml > /dev/null
 rm tests/nfs.xml && rm tests/strength.xml && rm tests/weakness.xml && rm tests/messages.xml
 echo "ok"
 
+echo "testing ElectreIIPreorder..."
+cd ../ElectreIIPreorder
+
+python ./ElectreIIPreorder.py -i tests/in1 -o tests
+diff -s tests/ranking.xml tests/out1/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out1/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in2 -o tests
+diff -s tests/ranking.xml tests/out2/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out2/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in3 -o tests
+diff -s tests/ranking.xml tests/out3/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out3/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in4 -o tests
+diff -s tests/ranking.xml tests/out4/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out4/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+

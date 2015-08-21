@@ -584,6 +584,12 @@ def get_input_data(input_dir, filenames, params, **kwargs):
                                                           categories_profiles=categories_profiles,
                                                           use_partials=use_partials, use_value=False)
 
+        elif p == 'preorder':
+            
+            if (trees.has_key('preorder')):
+                alternatives = px.getAlternativesID(trees['alternatives'])        
+                d.preorder = px.getAlternativeValue(trees['preorder'], alternatives, None)
+           
 
         elif p == 'downwards':
             
@@ -675,12 +681,18 @@ def get_input_data(input_dir, filenames, params, **kwargs):
         elif p == 'use_pre_veto':
             parameter = px.getParameterByName(trees['method_parameters'], 'use_pre_veto')
             d.use_pre_veto = True if parameter == 'true' else False
-        
+       
         elif p == 'alpha':
             d.alpha = px.getParameterByName(trees['method_parameters'], 'alpha')
         
         elif p == 'beta':
             d.beta = px.getParameterByName(trees['method_parameters'], 'beta')
+        
+        elif p == 's1':
+            d.s1 = px.getParameterByName(trees['method_parameters'], 's1')
+        
+        elif p == 's2':
+            d.s2 = px.getParameterByName(trees['method_parameters'], 's2')
         
         elif p == 'crisp_outranking':
             d.crisp_outranking = px.getParameterByName(trees['method_parameters'], 'crisp_outranking')

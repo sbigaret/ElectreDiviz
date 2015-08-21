@@ -17,13 +17,13 @@
         </input>
         <input id="input2" name="outranking" displayName="outranking" isoptional="0">
             <documentation>
-                <description>Outranking: binary realtion (f.e. CRISP result) or real-value comparisons</description>
+                <description>Outranking: binary relation (f.e. CRISP result) or real-value comparisons</description>
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
         <input id="input3" name="nonoutranking" displayName="non_outranking" isoptional="1">
             <documentation>
-                <description>Non-Outranking: binary realtion (f.e. CRISP result) or real-value comparisons</description>
+                <description>Non-Outranking: binary relation (f.e. CRISP result) or real-value comparisons</description>
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
