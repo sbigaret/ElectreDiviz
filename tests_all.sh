@@ -190,3 +190,38 @@ diff -s tests/messages.xml tests/out4/messages.xml > /dev/null
 rm tests/ranking.xml && rm tests/messages.xml
 echo "ok"
 
+python ./ElectreIIPreorder.py -i tests/in5 -o tests
+diff -s tests/ranking.xml tests/out5/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out5/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in6 -o tests
+diff -s tests/ranking.xml tests/out6/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out6/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in7 -o tests
+diff -s tests/ranking.xml tests/out7/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out7/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in8 -o tests
+diff -s tests/ranking.xml tests/out8/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out8/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in9 -o tests
+diff -s tests/ranking.xml tests/out9/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out9/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
+
+python ./ElectreIIPreorder.py -i tests/in10 -o tests
+diff -s tests/ranking.xml tests/out10/ranking.xml > /dev/null
+diff -s tests/messages.xml tests/out10/messages.xml > /dev/null
+rm tests/ranking.xml && rm tests/messages.xml
+echo "ok"
