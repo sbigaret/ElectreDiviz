@@ -21,14 +21,13 @@
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
-        </input>
             <input id="input3" name="preorder" displayName="preorder" isoptional="1">
             <documentation>
                 <description>A complete pre-order (ranking, this data is optional). When it is provided this algorithm constructs new pre-orders over all eq-aequo classes of provided pre-order, basing on given outranking matrix.</description>
             </documentation>
             <xmcda tag="alternativesComparisons" />
         </input>
-        <input id="input3" name="method_parameters" displayName="method_parameters" isoptional="0">
+        <input id="input4" name="method_parameters" displayName="method_parameters" isoptional="0">
             <documentation>
                 <description>A set of parameters provided to tune up the module's operation</description>
             </documentation>
@@ -59,6 +58,7 @@
                     </item>
                 </items>
                 <defaultValue>item0</defaultValue>
+                </entry>
             </gui>
         </input>
         
