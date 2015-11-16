@@ -25,7 +25,7 @@
             <documentation>
                 <description>A complete pre-order (ranking, this data is optional). When it is provided this algorithm constructs new pre-orders over all eq-aequo classes of provided pre-order, basing on given outranking matrix.</description>
             </documentation>
-            <xmcda tag="alternativesComparisons" />
+            <xmcda tag="alternativesValues" />
         </input>
         <input id="input4" name="method_parameters" displayName="method_parameters" isoptional="0">
             <documentation>
